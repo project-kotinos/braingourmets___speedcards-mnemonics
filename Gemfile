@@ -40,6 +40,7 @@ group :test do
   gem 'rails_best_practices'
   gem 'brakeman'
   gem 'scss-lint'
+  gem 'coffeelint'
 
   # Testing
   gem 'spring'

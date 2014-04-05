@@ -9,7 +9,8 @@ Rails.application.load_tasks
 task default: :test
 
 task test: [
-  :travis_lint, :rubocop, :reek, :rails_best_practices, :brakeman, :scss_lint
+  :travis_lint, :rubocop, :reek, :rails_best_practices, :brakeman, :scss_lint,
+  :coffeelint
 ]
 
 task :travis_lint do

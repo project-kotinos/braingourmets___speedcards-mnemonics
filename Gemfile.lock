@@ -53,6 +53,10 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.7.0)
+    coffeelint (0.2.5)
+      coffee-script
+      execjs
+      json
     colored (1.2)
     erubis (2.7.0)
     execjs (2.0.2)
@@ -177,6 +181,7 @@ DEPENDENCIES
   brakeman
   coffee-rails
   coffee-rails-source-maps
+  coffeelint
   jquery-rails
   mysql2
   rails (~> 4.1.0.rc2)
