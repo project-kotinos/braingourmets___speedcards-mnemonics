@@ -10,7 +10,7 @@ task default: :test
 
 task test: [
   :travis_lint, :rubocop, :reek, :rails_best_practices, :brakeman,
-  :haml_lint, :scss_lint, :coffeelint
+  :haml_lint, :scss_lint, :coffeelint, :spec
 ]
 
 task :travis_lint do
@@ -18,11 +18,11 @@ task :travis_lint do
 end
 
 task :rubocop do
-  sh 'rubocop --rails app/ test/ Gemfile Rakefile'
+  sh 'rubocop --rails app/ spec/ Gemfile Rakefile'
 end
 
 task :reek do
-  sh 'reek app/ test/ Gemfile Rakefile'
+  sh 'reek app/ spec/ Gemfile Rakefile'
 end
 
 task :rails_best_practices do

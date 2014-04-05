@@ -50,5 +50,10 @@ group :test do
   gem 'coffeelint'
 
   # Testing
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
   gem 'spring'
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'coveralls', require: false
 end
