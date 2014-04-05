@@ -35,6 +35,7 @@ end
 group :test do
   # Style checkers
   gem 'travis-lint'
+  gem 'rubocop'
 
   # Testing
   gem 'spring'
