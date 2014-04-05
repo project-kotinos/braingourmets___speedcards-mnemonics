@@ -37,6 +37,7 @@ group :test do
   gem 'travis-lint'
   gem 'rubocop'
   gem 'reek'
+  gem 'rails_best_practices'
 
   # Testing
   gem 'spring'

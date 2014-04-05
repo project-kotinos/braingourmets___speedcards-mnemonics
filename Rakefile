@@ -9,7 +9,7 @@ Rails.application.load_tasks
 task default: :test
 
 task test: [
-  :travis_lint, :rubocop, :reek
+  :travis_lint, :rubocop, :reek, :rails_best_practices
 ]
 
 task :travis_lint do
@@ -22,4 +22,8 @@ end
 
 task :reek do
   sh 'reek app/ spec/ Gemfile Rakefile'
+end
+
+task :rails_best_practices do
+  sh 'rails_best_practices'
 end
