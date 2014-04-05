@@ -9,7 +9,7 @@ Rails.application.load_tasks
 task default: :test
 
 task test: [
-  :travis_lint, :rubocop, :reek, :rails_best_practices, :brakeman
+  :travis_lint, :rubocop, :reek, :rails_best_practices, :brakeman, :scss_lint
 ]
 
 task :travis_lint do
@@ -30,4 +30,8 @@ end
 
 task :brakeman do
   sh 'brakeman -z'
+end
+
+task :scss_lint do
+  sh 'scss-lint -c config/scss_lint.yml app/assets/stylesheets/'
 end

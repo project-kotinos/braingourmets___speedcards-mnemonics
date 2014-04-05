@@ -132,6 +132,9 @@ GEM
       railties (>= 4.0.0, < 5.0)
       sass (>= 3.1.10)
       sprockets-rails (~> 2.0.0)
+    scss-lint (0.21.0)
+      rainbow (~> 2.0)
+      sass (~> 3.3.0)
     sexp_processor (4.4.3)
     slim (2.0.2)
       temple (~> 0.6.6)
@@ -182,6 +185,7 @@ DEPENDENCIES
   rubocop
   sass
   sass-rails
+  scss-lint
   spring
   sqlite3
   travis-lint

@@ -39,6 +39,7 @@ group :test do
   gem 'reek'
   gem 'rails_best_practices'
   gem 'brakeman'
+  gem 'scss-lint'
 
   # Testing
   gem 'spring'
