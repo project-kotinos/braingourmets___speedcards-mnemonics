@@ -5,7 +5,7 @@
 [![Code Climate](https://codeclimate.com/github/braingourmets/speedcards-mnemonics.png)](https://codeclimate.com/github/braingourmets/speedcards-mnemonics)
 
 This application provides a database for creating mnemonics for two-card
-playing card pairs for.
+playing card pairs for speed cards.
 
 ## Prerequisites
 
