@@ -206,7 +206,7 @@ GEM
       tilt (>= 1.3.3, < 2.1)
     slop (3.5.0)
     spring (1.1.2)
-    sprockets (2.12.0)
+    sprockets (2.11.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)
@@ -267,8 +267,9 @@ DEPENDENCIES
   rubocop
   sass
   sass-rails
-  scss-lint
+  scss-lint (>= 0.17.0)
   spring
+  sprockets (= 2.11.0)
   sqlite3
   travis-lint
   turbolinks

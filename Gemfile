@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'rails', '~> 4.1.0.rc2'
+# This is required to work around a problem with sass, sass-rails, sprockets.
+gem 'sprockets', '2.11.0'
 
 # Use Haml for HTML templates (http://haml.info)
 gem 'haml'
@@ -46,7 +48,7 @@ group :test do
   gem 'rails_best_practices'
   gem 'brakeman'
   gem 'haml-lint'
-  gem 'scss-lint'
+  gem 'scss-lint', '>= 0.17.0'
   gem 'coffeelint'
 
   # Testing
