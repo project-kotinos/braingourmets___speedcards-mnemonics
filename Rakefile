@@ -9,7 +9,7 @@ Rails.application.load_tasks
 task default: :test
 
 task test: [
-  :travis_lint, :rubocop
+  :travis_lint, :rubocop, :reek
 ]
 
 task :travis_lint do
@@ -18,4 +18,8 @@ end
 
 task :rubocop do
   sh 'rubocop --rails app/ test/ Gemfile Rakefile'
+end
+
+task :reek do
+  sh 'reek app/ spec/ Gemfile Rakefile'
 end

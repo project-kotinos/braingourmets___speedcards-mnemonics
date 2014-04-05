@@ -36,6 +36,7 @@ group :test do
   # Style checkers
   gem 'travis-lint'
   gem 'rubocop'
+  gem 'reek'
 
   # Testing
   gem 'spring'
