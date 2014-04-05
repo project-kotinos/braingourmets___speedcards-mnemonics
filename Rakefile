@@ -22,7 +22,7 @@ task :rubocop do
 end
 
 task :reek do
-  sh 'reek app/ spec/ Gemfile Rakefile'
+  sh 'reek app/ test/ Gemfile Rakefile'
 end
 
 task :rails_best_practices do
