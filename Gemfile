@@ -18,6 +18,10 @@ gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster.
 gem 'turbolinks'
 
+# Use Twitter Bootstrap Sass
+gem 'bootstrap-sass'
+gem 'bootstrap_form'
+
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
