@@ -9,7 +9,7 @@ Rails.application.load_tasks
 task default: :test
 
 task test: [
-  :travis_lint, :rubocop, :reek, :rails_best_practices
+  :travis_lint, :rubocop, :reek, :rails_best_practices, :brakeman
 ]
 
 task :travis_lint do
@@ -26,4 +26,8 @@ end
 
 task :rails_best_practices do
   sh 'rails_best_practices'
+end
+
+task :brakeman do
+  sh 'brakeman -z'
 end

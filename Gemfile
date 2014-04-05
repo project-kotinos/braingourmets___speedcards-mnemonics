@@ -38,6 +38,7 @@ group :test do
   gem 'rubocop'
   gem 'reek'
   gem 'rails_best_practices'
+  gem 'brakeman'
 
   # Testing
   gem 'spring'
