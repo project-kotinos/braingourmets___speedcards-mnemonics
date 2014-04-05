@@ -33,6 +33,9 @@ group :development do
 end
 
 group :test do
+  # Style checkers
+  gem 'travis-lint'
+
   # Testing
   gem 'spring'
 end

@@ -4,3 +4,13 @@
 require File.expand_path('../config/application', __FILE__)
 
 Rails.application.load_tasks
+
+task default: :test
+
+task test: [
+  :travis_lint
+]
+
+task :travis_lint do
+  sh 'travis-lint'
+end
