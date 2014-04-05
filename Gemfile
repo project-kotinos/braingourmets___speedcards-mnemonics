@@ -18,14 +18,8 @@ gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster.
 gem 'turbolinks'
 
-group :production do
-  gem 'mysql2'
-end
-
-group :development, :test do
-  # Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
-end
+# Use sqlite3 as the database for Active Record
+gem 'sqlite3'
 
 group :development do
   # Use CoffeeScript source maps
