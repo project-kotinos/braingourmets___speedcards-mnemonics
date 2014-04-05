@@ -2,6 +2,10 @@ source 'https://rubygems.org'
 
 gem 'rails', '~> 4.1.0.rc2'
 
+# Use Haml for HTML templates (http://haml.info)
+gem 'haml'
+gem 'haml-rails'
+
 # Use SCSS for stylesheets
 gem 'sass'
 gem 'sass-rails'
@@ -41,6 +45,7 @@ group :test do
   gem 'reek'
   gem 'rails_best_practices'
   gem 'brakeman'
+  gem 'haml-lint'
   gem 'scss-lint'
   gem 'coffeelint'
 

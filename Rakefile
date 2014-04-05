@@ -9,8 +9,8 @@ Rails.application.load_tasks
 task default: :test
 
 task test: [
-  :travis_lint, :rubocop, :reek, :rails_best_practices, :brakeman, :scss_lint,
-  :coffeelint
+  :travis_lint, :rubocop, :reek, :rails_best_practices, :brakeman,
+  :haml_lint, :scss_lint, :coffeelint
 ]
 
 task :travis_lint do
@@ -31,6 +31,10 @@ end
 
 task :brakeman do
   sh 'brakeman -z'
+end
+
+task :haml_lint do
+  sh 'haml-lint app/views/'
 end
 
 task :scss_lint do
