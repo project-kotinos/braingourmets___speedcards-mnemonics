@@ -27,6 +27,11 @@ group :development, :test do
   gem 'sqlite3'
 end
 
+group :development do
+  # Use CoffeeScript source maps
+  gem 'coffee-rails-source-maps'
+end
+
 group :test do
   # Testing
   gem 'spring'
