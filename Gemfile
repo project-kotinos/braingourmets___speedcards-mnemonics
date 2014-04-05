@@ -28,6 +28,10 @@ gem 'sqlite3'
 group :development do
   # Use CoffeeScript source maps
   gem 'coffee-rails-source-maps'
+
+  # Provide better error pages
+  gem 'better_errors'
+  gem 'binding_of_caller'
 end
 
 group :test do
