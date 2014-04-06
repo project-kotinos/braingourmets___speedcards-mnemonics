@@ -10,6 +10,7 @@ env:
   - DB=sqlite
 
 before_script:
+  - cp config/local_env_travis.yml config/local_env.yml
 
 script:
   - RAILS_ENV=test bundle exec rake --trace db:migrate test

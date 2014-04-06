@@ -8,7 +8,15 @@ This application provides a database for creating mnemonics for two-card
 playing card pairs for speed cards.
 
 
-## Environments and hosting
+## Installation
+
+  1. Run bundle install.
+  2. cp config/local_env_template.yml to config/local_env.yml.
+  3. rake secret, and copy the generated secret key base to config/local_env.yml.
+  4. Set the hostname (e.g. localhost) in config/local_env.yml.
+
+
+### Environment and hostin
 
 This application is a single-user application without any built-in
 authentication. It is mostly intended to be run locally. If you run it on a

@@ -1,0 +1,5 @@
+# Copy this file to local_env.yml, set the corresponding values, and delete
+# this line.
+
+HOSTNAME_PRODUCTION: 'localhost'
+SECRET_KEY_BASE: ''
