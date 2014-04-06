@@ -7,6 +7,14 @@
 This application provides a database for creating mnemonics for two-card
 playing card pairs for speed cards.
 
+
+## Environments and hosting
+
+This application is a single-user application without any built-in
+authentication. It is mostly intended to be run locally. If you run it on a
+remote server, you will need to set up basic authentication for access control.
+
+
 ## Prerequisites
 
   * Ruby >= 2.0
