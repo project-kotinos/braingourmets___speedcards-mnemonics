@@ -31,6 +31,9 @@ gem 'bootstrap_form'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
+# immutable attributes
+gem 'immutable_attributes'
+
 group :development do
   # Use CoffeeScript source maps
   gem 'coffee-rails-source-maps'
