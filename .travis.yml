@@ -14,6 +14,3 @@ before_script:
 
 script:
   - RAILS_ENV=test bundle exec rake --trace db:migrate test
-
-notifications:
-  secure: hMXJcHIgiwg1Jv1Q8my6bpzxQH5ioAzjw9W4v9TUBbSZSMTeMbZVSLtsP5ZjATll8AkooHKzbt+7pdiS6XUD/oRoKFx6hogM9LZWsHtOsNnFwZvpXPlXaF+MhP9JnNvg+lNvoAL0F4rb4qlukU8EFuz60vgACe8DFBORR7saLHk=
