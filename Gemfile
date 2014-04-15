@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 4.1.0.rc2'
+gem 'rails', '4.1.0'
 # This is required to work around a problem with sass, sass-rails, sprockets.
 gem 'sprockets', '2.11.0'
 
