@@ -45,7 +45,6 @@ end
 
 group :test do
   # Style checkers
-  gem 'travis-lint'
   gem 'rubocop'
   gem 'reek'
   gem 'rails_best_practices'
