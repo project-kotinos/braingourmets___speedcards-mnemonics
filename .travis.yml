@@ -10,8 +10,10 @@ env:
   - DB=sqlite
 
 before_script:
+  - gem install brakeman
   - cp config/local_env_travis.yml config/local_env.yml
   - bundle exec rake db:setup RAILS_ENV=test
 
 script:
   - RAILS_ENV=test bundle exec rake --trace db:migrate test
+  - brakeman -z

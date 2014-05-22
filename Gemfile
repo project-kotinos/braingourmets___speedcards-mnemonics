@@ -48,7 +48,6 @@ group :test do
   gem 'rubocop'
   gem 'reek'
   gem 'rails_best_practices'
-  gem 'brakeman'
   gem 'haml-lint'
   gem 'scss-lint', '>= 0.17.0'
   gem 'coffeelint'
