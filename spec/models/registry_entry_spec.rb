@@ -9,12 +9,14 @@ describe RegistryEntry do
   describe '#key' do
     it 'must exist' do
       another_registry_entry = build(:registry_entry, key: nil)
-      expect(another_registry_entry).to have(1).error_on(:key)
+      another_registry_entry.valid?
+      expect(another_registry_entry.errors[:key].size).to eq(1)
     end
 
     it 'is unique' do
       another_registry_entry = build(:registry_entry, key: registry_entry.key)
-      expect(another_registry_entry).to have(1).error_on(:key)
+      another_registry_entry.valid?
+      expect(another_registry_entry.errors[:key].size).to eq(1)
     end
 
     it 'cannot be overwritten' do
