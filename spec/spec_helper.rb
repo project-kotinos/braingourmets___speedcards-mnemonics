@@ -5,7 +5,6 @@ Coveralls.wear!('rails')
 
 require File.expand_path('../../config/environment', __FILE__)
 require 'rspec/rails'
-require 'rspec/autorun'
 require 'capybara/rails'
 require 'capybara/rspec'
 
@@ -47,4 +46,7 @@ RSpec.configure do |config|
     # Disable the "should" syntax.
     c.syntax = :expect
   end
+
+  # enable file-type inference
+  config.infer_spec_type_from_file_location!
 end
