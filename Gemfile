@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.1.1'
+gem 'rails', '4.1.3'
 # This is required to work around a problem with sass, sass-rails, sprockets.
 gem 'sprockets', '2.11.0'
 gem 'sprockets-rails', require: 'sprockets/railtie'
