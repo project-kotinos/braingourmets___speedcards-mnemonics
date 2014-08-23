@@ -17,7 +17,7 @@ playing card pairs for speed cards.
   4. Set the hostname (e.g. localhost) in config/local_env.yml.
 
 
-### Environment and hostin
+### Environment and hosting
 
 This application is a single-user application without any built-in
 authentication. It is mostly intended to be run locally. If you run it on a
