@@ -1,0 +1,128 @@
+// How to generate the SVG file:
+// dot -Tsvg -odoc/domain_model/speedcards-mnemonics-domain-model.svg doc/domain_model/speedcards-mnemonics-domain-model.dot
+digraph SpeedcardsMnemonicsDomainModel {
+
+  //
+  // Layout basics
+  //
+
+  fontname = "Bitstream Vera Sans, Arial"
+  fontsize = 8
+
+  node [
+    fontname = "Bitstream Vera Sans, Arial"
+    fontsize = 8
+    shape = "record"
+  ]
+
+  edge [
+    fontname = "Bitstream Vera Sans, Arial"
+    fontsize = 8
+  ]
+
+
+  //
+  // Entities
+  //
+
+   Color                [label = "Color"]
+   Value                [label = "Value"]
+   Card                 [label = "Card"]
+   CardPair             [label = "{CardPair | mnemonic}"]
+   AbstractCardProperty [label = "{AbstractCardProperty | name \n mnemonic}"]
+
+
+  //
+  // Relations without labels
+  //
+
+  edge [
+    label = ""
+    arrowtail = ""
+    dir = ""
+  ]
+
+  Card     -> Color [taillabel="*"    headlabel="1"]
+  Card     -> Value [taillabel="*"    headlabel="1"]
+  CardPair -> Card  [taillabel="*"    headlabel="2"]
+
+
+  //
+  // Relations with labels
+  //
+
+  edge [
+    arrowtail = ""
+    dir = ""
+  ]
+
+
+  //
+  // Inheritance
+  //
+
+  edge [
+    taillabel = ""
+    headlabel = ""
+    arrowtail = "empty"
+    dir = "back"
+    label = ""
+  ]
+
+  AbstractCardProperty -> Color
+  AbstractCardProperty -> Value
+
+
+  //
+  // Notes
+  //
+
+  node [
+    fontname = "Bitstream Vera Sans, Arial"
+    fontsize = 8
+    shape = "note"
+    style = filled
+    color = lightgrey
+ ]
+
+  edge [
+    style = dashed
+    arrowtail = "none"
+    arrowhead = "none"
+    label = ""
+    color = grey
+  ]
+
+
+
+  //
+  // Invisible edges to improve the layout
+  //
+
+  edge [
+    style = invis
+    label = ""
+  ]
+
+
+  //
+  // Questions
+  //
+
+  node [
+    fontname = "Bitstream Vera Sans, Arial"
+    fontsize = 8
+    shape = ellipse
+    style = filled
+    color = orange
+  ]
+
+  edge [
+    style = dashed
+    arrowtail = "none"
+    arrowhead = "none"
+    label = ""
+    color = orange
+  ]
+
+}
