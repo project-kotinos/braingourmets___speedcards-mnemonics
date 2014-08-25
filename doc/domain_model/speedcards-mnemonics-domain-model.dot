@@ -40,6 +40,8 @@ digraph SpeedcardsMnemonicsDomainModel {
     label = ""
     arrowtail = ""
     dir = ""
+    arrowhead = "open"
+    arrowsize = .4
   ]
 
   Card     -> Color [taillabel="*"    headlabel="1"]
@@ -67,6 +69,7 @@ digraph SpeedcardsMnemonicsDomainModel {
     arrowtail = "empty"
     dir = "back"
     label = ""
+    arrowsize = 1
   ]
 
   AbstractCardProperty -> Color
@@ -82,7 +85,8 @@ digraph SpeedcardsMnemonicsDomainModel {
     fontsize = 8
     shape = "note"
     style = filled
-    color = lightgrey
+    color = cornflowerblue
+    fillcolor = white
  ]
 
   edge [
@@ -90,7 +94,7 @@ digraph SpeedcardsMnemonicsDomainModel {
     arrowtail = "none"
     arrowhead = "none"
     label = ""
-    color = grey
+    color = cornflowerblue
   ]
 
 
