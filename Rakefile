@@ -32,3 +32,8 @@ end
 task :scss_lint do
   sh 'scss-lint -c config/scss_lint.yml app/assets/stylesheets/'
 end
+
+desc 'Generates the YARD API documentation from the Ruby sources.'
+task :yard do
+  sh 'yard doc -o ./doc/api'
+end

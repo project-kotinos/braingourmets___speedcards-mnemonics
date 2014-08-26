@@ -60,3 +60,7 @@ group :test do
   gem 'database_cleaner'
   gem 'coveralls', require: false
 end
+
+group :doc do
+  gem 'yard', require: false
+end
