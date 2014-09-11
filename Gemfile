@@ -10,7 +10,7 @@ gem 'haml-rails'
 
 # Use SCSS for stylesheets
 gem 'sass'
-gem 'sass-rails'
+gem 'sass-rails', '~> 5.0.0.beta1'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier'
@@ -49,7 +49,7 @@ group :test do
   gem 'reek'
   gem 'rails_best_practices'
   gem 'haml-lint'
-  gem 'scss-lint', '>= 0.17.0'
+  gem 'scss-lint'
   gem 'coffeelint'
 
   # Testing
