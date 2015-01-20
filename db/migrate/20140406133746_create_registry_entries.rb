@@ -4,7 +4,7 @@ class CreateRegistryEntries < ActiveRecord::Migration
       t.string :key, unique: true, null: false
       t.string :value
 
-      t.timestamps
+      t.timestamps null: false
     end
 
     add_index :registry_entries, :key
