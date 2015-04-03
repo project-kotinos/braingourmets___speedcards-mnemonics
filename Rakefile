@@ -10,15 +10,15 @@ task default: :test
 
 task test: [
   :rubocop, :reek, :rails_best_practices,
-  :haml_lint, :scss_lint, :coffeelint, :spec
+  :haml_lint, :scss_lint, :coffeelint, :spec, :bundle_audit
 ]
 
 task :rubocop do
-  sh 'rubocop --rails app/ spec/ Gemfile Rakefile'
+  sh 'rubocop --rails app/ lib/ db/seeds.rb spec/ Gemfile Rakefile'
 end
 
 task :reek do
-  sh 'reek app/ spec/ Gemfile Rakefile'
+  sh 'reek app/ lib/ db/seeds.rb spec/ Gemfile Rakefile'
 end
 
 task :rails_best_practices do

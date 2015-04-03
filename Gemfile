@@ -53,6 +53,9 @@ group :test do
   gem 'scss-lint'
   gem 'coffeelint'
 
+  # Security checker
+  gem 'bundler-audit'
+
   # Testing
   gem 'rspec-rails'
   gem 'factory_girl_rails'
