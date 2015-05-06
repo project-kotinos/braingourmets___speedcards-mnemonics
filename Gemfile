@@ -29,19 +29,30 @@ gem 'turbolinks'
 gem 'bootstrap-sass'
 gem 'bootstrap_form'
 
-# Use sqlite3 as the database for Active Record
+# Use sqlite3 as the database for Active Record.
 gem 'sqlite3'
 
 # immutable attributes
 gem 'immutable_attributes'
 
+group :development, :test do
+  # Spring speeds up development by keeping your application running in the
+  # background. Read more: https://github.com/rails/spring
+  gem 'spring'
+end
+
 group :development do
   # Use CoffeeScript source maps
   gem 'coffee-rails-source-maps'
-
   # Provide better error pages
   gem 'better_errors'
   gem 'binding_of_caller'
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger
+  # console.
+  gem 'byebug'
+  # Access an IRB console on exception pages or by using <%= console %> in
+  # views.
+  gem 'web-console'
 end
 
 group :test do
@@ -59,7 +70,6 @@ group :test do
   # Testing
   gem 'rspec-rails'
   gem 'factory_girl_rails'
-  gem 'spring'
   gem 'capybara'
   gem 'database_cleaner'
   gem 'coveralls', require: false
