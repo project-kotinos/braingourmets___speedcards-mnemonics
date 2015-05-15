@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/braingourmets/speedcards-mnemonics.svg?branch=master)](https://travis-ci.org/braingourmets/speedcards-mnemonics)
 [![Code Climate](https://codeclimate.com/github/braingourmets/speedcards-mnemonics.svg)](https://codeclimate.com/github/braingourmets/speedcards-mnemonics)
-[![Coverage Status](https://coveralls.io/repos/braingourmets/speedcards-mnemonics/badge.png)](https://coveralls.io/r/braingourmets/speedcards-mnemonics?branch=master)
+[![Coverage Status](https://coveralls.io/repos/braingourmets/speedcards-mnemonics/badge.svg?branch=master)](https://coveralls.io/r/braingourmets/speedcards-mnemonics?branch=master)
 [![Dependency Status](https://gemnasium.com/braingourmets/speedcards-mnemonics.svg)](https://gemnasium.com/braingourmets/speedcards-mnemonics)
 
 This application provides a database for creating mnemonics for two-card
