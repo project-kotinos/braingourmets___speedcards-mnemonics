@@ -61,7 +61,7 @@ group :test do
   gem 'reek', require: false
   gem 'rails_best_practices', require: false
   gem 'haml-lint', require: false
-  gem 'scss-lint', require: false
+  gem 'scss_lint', require: false
   gem 'coffeelint'
 
   # Security checker
