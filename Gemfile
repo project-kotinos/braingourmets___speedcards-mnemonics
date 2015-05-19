@@ -57,20 +57,21 @@ end
 
 group :test do
   # Style checkers
-  gem 'rubocop'
-  gem 'reek'
-  gem 'rails_best_practices'
-  gem 'haml-lint'
-  gem 'scss-lint'
+  gem 'rubocop', require: false
+  gem 'reek', require: false
+  gem 'rails_best_practices', require: false
+  gem 'haml-lint', require: false
+  gem 'scss-lint', require: false
   gem 'coffeelint'
 
   # Security checker
-  gem 'bundler-audit'
+  gem 'bundler-audit', require: false
 
   # Testing
   gem 'rspec-rails'
+  gem 'shoulda-matchers', require: false
   gem 'factory_girl_rails'
-  gem 'capybara'
+  gem 'capybara', require: false
   gem 'database_cleaner'
   gem 'coveralls', require: false
 end
