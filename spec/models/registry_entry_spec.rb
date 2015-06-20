@@ -1,9 +1,6 @@
-require 'spec_helper'
+require 'rails_helper'
 
-##
-# @author Oliver Klee
-#
-describe RegistryEntry do
+RSpec.describe RegistryEntry, type: :model do
   let(:registry_entry) { create(:registry_entry) }
 
   describe '#key' do

@@ -1,6 +1,6 @@
-require 'spec_helper'
+require 'rails_helper'
 
-feature 'the home page' do
+RSpec.feature 'the home page', type: :feature do
   scenario 'has "Speed-cards mnemonics" as HTML title' do
     visit '/'
     expect(page).to have_title('Speed-cards mnemonics')
