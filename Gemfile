@@ -16,7 +16,7 @@ gem 'sass-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier'
 
-# Use CoffeeScript for .js.coffee assets and views
+# Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails'
 
 # Use jquery as the JavaScript library
