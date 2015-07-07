@@ -8,8 +8,6 @@ end
 
 require 'spec_helper'
 require 'rspec/rails'
-require 'shoulda/matchers'
-# Add additional requires below this line. Rails is not loaded until this point!
 
 # Checks for pending migrations before tests are run.
 ActiveRecord::Migration.maintain_test_schema!

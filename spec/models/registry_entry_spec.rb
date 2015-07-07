@@ -1,4 +1,5 @@
 require 'rails_helper'
+require 'shoulda/matchers'
 
 RSpec.describe RegistryEntry, type: :model do
   subject(:registry_entry) { create(:registry_entry) }
