@@ -25,9 +25,6 @@ gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster.
 gem 'turbolinks'
 
-# Automatically add foreign keys for migrations
-gem 'schema_auto_foreign_keys'
-
 # Use Twitter Bootstrap Sass
 gem 'bootstrap-sass'
 gem 'bootstrap_form'

@@ -14,10 +14,12 @@
 ActiveRecord::Schema.define(version: 20140406133746) do
 
   create_table "registry_entries", force: :cascade do |t|
-    t.string   "key",        null: false, index: {name: "index_registry_entries_on_key"}
+    t.string   "key",        null: false
     t.string   "value"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  add_index "registry_entries", ["key"], name: "index_registry_entries_on_key"
 
 end
