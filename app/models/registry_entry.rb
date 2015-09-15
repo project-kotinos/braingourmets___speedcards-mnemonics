@@ -7,5 +7,4 @@ class RegistryEntry < ActiveRecord::Base
   validates :key, presence: true, uniqueness: true
 
   attr_immutable :key
-  attr_accessor :value
 end
