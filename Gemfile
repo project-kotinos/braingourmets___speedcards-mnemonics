@@ -69,7 +69,7 @@ group :test do
 
   # Testing
   gem 'rspec-rails'
-  gem 'shoulda-matchers', require: false
+  gem 'shoulda-matchers'
   gem 'factory_girl_rails'
   gem 'capybara', require: false
   gem 'database_cleaner'
