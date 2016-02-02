@@ -21,7 +21,8 @@ end
 
 desc 'Runs Reek to check for code smells.'
 task :reek do
-  sh 'reek app/ lib/ db/seeds.rb spec/ Gemfile Rakefile'
+  sh 'reek  -c config/defaults.reek  app/ lib/ db/seeds.rb spec/ ' \
+    'Gemfile Rakefile'
 end
 
 desc 'Runs rails_best_practices to check the way Rails is used.'
