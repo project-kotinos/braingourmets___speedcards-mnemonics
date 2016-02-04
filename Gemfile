@@ -54,7 +54,7 @@ group :test do
   gem 'rubocop', require: false
   gem 'reek', require: false
   gem 'rails_best_practices', require: false
-  gem 'haml-lint', require: false
+  gem 'haml_lint', require: false
   gem 'scss_lint', require: false
   gem 'coffeelint'
 
