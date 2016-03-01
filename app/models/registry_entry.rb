@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 ##
 # This model represents a registry entry with a key and value.
 #

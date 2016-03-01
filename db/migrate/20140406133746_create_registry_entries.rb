@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CreateRegistryEntries < ActiveRecord::Migration
   def change
     create_table :registry_entries do |t|
