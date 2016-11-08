@@ -4,15 +4,15 @@
 # for example lib/tasks/capistrano.rake, and they will automatically be
 # available to Rake.
 
-require File.expand_path('../config/application', __FILE__)
+require_relative 'config/application'
 
 Rails.application.load_tasks
 
 Rake::Task['test'].clear
-task default: :test
+task default: :ci
 
 desc 'Runs style checkers and RSpec.'
-task test: [
+task ci: [
   :rubocop, :reek, :rails_best_practices,
   :haml_lint, :scss_lint, :coffeelint, :spec, :bundle_audit
 ]

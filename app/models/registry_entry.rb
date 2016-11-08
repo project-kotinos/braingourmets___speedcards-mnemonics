@@ -5,7 +5,7 @@
 #
 # @author Oliver Klee
 #
-class RegistryEntry < ActiveRecord::Base
+class RegistryEntry < ApplicationRecord
   validates :key, presence: true, uniqueness: true
 
   attr_immutable :key

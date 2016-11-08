@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 
 # Rails
-gem 'rails', '4.2.7.1'
+gem 'rails', '5.0.0.1'
 gem 'sprockets'
 gem 'sprockets-rails', require: 'sprockets/railtie'
 
@@ -34,6 +34,9 @@ gem 'bootstrap_form'
 # Use sqlite3 as the database for Active Record.
 gem 'sqlite3'
 
+# Use Puma as the app server
+gem 'puma'
+
 # immutable attributes
 gem 'immutable_attributes'
 
@@ -46,9 +49,14 @@ end
 group :development do
   # Use CoffeeScript source maps
   gem 'coffee-rails-source-maps'
+
   # Provide better error pages
   gem 'better_errors'
   gem 'binding_of_caller'
+
+  # Listen for file changes
+  gem 'listen'
+  gem 'spring-watcher-listen'
 end
 
 group :test do
@@ -65,6 +73,7 @@ group :test do
 
   # Testing
   gem 'rspec-rails'
+  gem 'rails-controller-testing'
   gem 'shoulda-matchers'
   gem 'factory_girl_rails'
   gem 'capybara', require: false
