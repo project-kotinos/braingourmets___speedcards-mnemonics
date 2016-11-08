@@ -8,6 +8,7 @@ require File.expand_path('../config/application', __FILE__)
 
 Rails.application.load_tasks
 
+Rake::Task['test'].clear
 task default: :test
 
 desc 'Runs style checkers and RSpec.'
