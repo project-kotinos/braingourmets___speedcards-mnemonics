@@ -2,10 +2,10 @@
 
 require 'rails_helper'
 
-RSpec.describe HomeController, type: :controller do
+RSpec.describe HomeController, type: :request do
   describe 'GET #index' do
     it 'is successful' do
-      get :index
+      get home_index_url
 
       assert_response :success
     end
