@@ -60,23 +60,18 @@ group :development do
 end
 
 group :test do
-  # Style checkers
-  gem 'rubocop', require: false
-  gem 'reek', require: false
-  gem 'rails_best_practices', require: false
-  gem 'haml_lint', require: false
-  gem 'scss_lint', require: false
-  gem 'coffeelint'
-
-  # Security checker
   gem 'bundler-audit', require: false
-
-  # Testing
-  gem 'rspec-rails'
-  gem 'shoulda-matchers'
-  gem 'factory_girl_rails'
   gem 'capybara', require: false
+  gem 'coffeelint'
   gem 'coveralls', require: false
+  gem 'factory_girl_rails'
+  gem 'haml_lint', require: false
+  gem 'rails_best_practices', require: false
+  gem 'reek', require: false
+  gem 'rspec-rails'
+  gem 'rubocop', require: false
+  gem 'scss_lint', require: false
+  gem 'shoulda-matchers'
 end
 
 group :doc do

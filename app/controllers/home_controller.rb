@@ -9,6 +9,5 @@ class HomeController < ApplicationController
   ##
   # Creates the home page.
   #
-  def index
-  end
+  def index; end
 end
