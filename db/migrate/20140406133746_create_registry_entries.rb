@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class CreateRegistryEntries < ActiveRecord::Migration[4.2]
+class CreateRegistryEntries < ActiveRecord::Migration[5.0]
   def change
     create_table :registry_entries do |t|
       t.string :key, unique: true, null: false
