@@ -5,8 +5,10 @@
 # available to Rake.
 
 require_relative 'config/application'
+require 'rspec/core/rake_task'
 
 Rails.application.load_tasks
+RSpec::Core::RakeTask.new(:spec)
 
 Rake::Task['test'].clear
 task default: :ci
