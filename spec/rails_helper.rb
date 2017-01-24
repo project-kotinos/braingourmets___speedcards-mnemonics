@@ -23,6 +23,8 @@ RSpec.configure do |config|
   config.include FactoryGirl::Syntax::Methods
 end
 
+FactoryGirl.allow_class_lookup = false
+
 Shoulda::Matchers.configure do |config|
   config.integrate do |with|
     with.test_framework :rspec
