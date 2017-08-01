@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 
 # Rails
-gem 'rails', '5.0.4'
+gem 'rails', '5.0.5'
 gem 'sprockets'
 gem 'sprockets-rails', require: 'sprockets/railtie'
 
