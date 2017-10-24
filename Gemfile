@@ -64,7 +64,7 @@ group :test do
   gem 'capybara', require: false
   gem 'coffeelint'
   gem 'coveralls', require: false
-  gem 'factory_girl_rails'
+  gem 'factory_bot_rails'
   gem 'haml_lint', require: false
   gem 'rails_best_practices', require: false
   gem 'reek', require: false

@@ -19,11 +19,11 @@ Capybara.exact = true
 RSpec.configure do |config|
   config.use_transactional_fixtures = true
 
-  # Provide the FactoryGirl methods
-  config.include FactoryGirl::Syntax::Methods
+  # Provide the FactoryBot methods
+  config.include FactoryBot::Syntax::Methods
 end
 
-FactoryGirl.allow_class_lookup = false
+FactoryBot.allow_class_lookup = false
 
 Shoulda::Matchers.configure do |config|
   config.integrate do |with|
