@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 
 # Rails
-gem 'rails', '5.1.6'
+gem 'rails', '5.2.0'
 gem 'sprockets'
 gem 'sprockets-rails', require: 'sprockets/railtie'
 
@@ -39,6 +39,9 @@ gem 'puma'
 
 # immutable attributes
 gem 'immutable_attributes'
+
+# Reduces boot times through caching; required in config/boot.rb
+gem 'bootsnap', require: false
 
 group :development, :test do
   # Spring speeds up development by keeping your application running in the

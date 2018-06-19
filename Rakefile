@@ -19,8 +19,7 @@ task ci: %i[
 
 desc 'Runs RuboCop for checking the Ruby files.'
 task :rubocop do
-  sh 'rubocop --rails app/ lib/ db/seeds.rb spec/ Gemfile Rakefile ' \
-    'config/routes.rb'
+  sh 'rubocop --rails app/ lib/ db/seeds.rb spec/ Gemfile Rakefile'
 end
 
 desc 'Runs Reek to check for code smells.'
