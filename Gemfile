@@ -73,6 +73,7 @@ group :test do
   gem 'reek', require: false
   gem 'rspec-rails'
   gem 'rubocop', require: false
+  gem 'rubocop-rspec', require: false
   gem 'scss_lint', require: false
   gem 'shoulda-matchers'
 end
