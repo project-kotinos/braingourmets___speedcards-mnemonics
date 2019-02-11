@@ -77,6 +77,8 @@ GEM
       rack-test (>= 0.6.3)
       regexp_parser (~> 1.2)
       xpath (~> 3.2)
+    childprocess (0.9.0)
+      ffi (~> 1.0, >= 1.0.11)
     code_analyzer (0.4.8)
       sexp_processor
     codeclimate-engine-rb (0.4.1)
@@ -259,6 +261,7 @@ GEM
     ruby_dep (1.5.0)
     ruby_parser (3.12.0)
       sexp_processor (~> 4.9)
+    rubyzip (1.2.2)
     sass (3.7.3)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -276,6 +279,9 @@ GEM
     scss_lint (0.57.1)
       rake (>= 0.9, < 13)
       sass (~> 3.5, >= 3.5.5)
+    selenium-webdriver (3.141.0)
+      childprocess (~> 0.5)
+      rubyzip (~> 1.2, >= 1.2.2)
     sexp_processor (4.11.0)
     shoulda-matchers (4.0.1)
       activesupport (>= 4.2.0)
@@ -357,6 +363,7 @@ DEPENDENCIES
   sass
   sass-rails
   scss_lint
+  selenium-webdriver
   shoulda-matchers
   spring
   spring-watcher-listen

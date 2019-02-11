@@ -2,7 +2,7 @@
 
 require 'rails_helper'
 
-RSpec.describe 'the home page', type: :feature do
+RSpec.describe 'the home page', type: :system do
   let(:path) { '/' }
 
   describe 'The page' do

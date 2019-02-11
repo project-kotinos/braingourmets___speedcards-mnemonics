@@ -75,6 +75,7 @@ group :test do
   gem 'rubocop', require: false
   gem 'rubocop-rspec', require: false
   gem 'scss_lint', require: false
+  gem 'selenium-webdriver'
   gem 'shoulda-matchers'
 end
 
