@@ -3,4 +3,6 @@ AllCops:
   TargetRailsVersion: 5.2
 Layout/IndentationConsistency:
   EnforcedStyle: rails
-require: rubocop-rspec
+require:
+  - rubocop-rspec
+  - rubocop-performance
